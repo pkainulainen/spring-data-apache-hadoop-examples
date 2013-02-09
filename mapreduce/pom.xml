@@ -19,7 +19,7 @@
         <apache.hadoop.version>1.0.3</apache.hadoop.version>
         <slf4j.version>1.6.1</slf4j.version>
         <spring.version>3.1.2.RELEASE</spring.version>
-        <spring.data.hadoop.version>1.0.0.M2</spring.data.hadoop.version>
+        <spring.data.hadoop.version>1.0.0.RC2</spring.data.hadoop.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <!-- Spring Milestone / RC repository needed by Spring Data Apache Hadoop -->
