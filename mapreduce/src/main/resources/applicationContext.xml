@@ -22,12 +22,5 @@
              reducer="net.petrikainulainen.spring.data.apachehadoop.WordReducer"/>
 
     <!-- Configures the job runner that runs the Hadoop jobs. -->
-    <bean class="org.springframework.data.hadoop.mapreduce.JobRunner">
-        <property name="jobs">
-            <list>
-                <!-- Configures the references to the actual Hadoop jobs. -->
-                <ref bean="wordCountJob"/>
-            </list>
-        </property>
-    </bean>
+    <hdp:job-runner id="wordCountJobRunner" job-ref="wordCountJob" run-at-startup="true"/>
 </beans>
