@@ -17,9 +17,9 @@
 
     <!-- Configures the word count job. -->
     <hdp:job id="wordCountJob"
-             jar-by-class="net.petrikainulainen.spring.data.apachehadoop.Main"
              input-path="${input.path}"
              output-path="${output.path}"
+             jar-by-class="net.petrikainulainen.spring.data.apachehadoop.Main"
              mapper="net.petrikainulainen.spring.data.apachehadoop.WordMapper"
              reducer="net.petrikainulainen.spring.data.apachehadoop.WordReducer"/>
 
