@@ -12,10 +12,12 @@
     <!-- Configures Apache Hadoop -->
     <hdp:configuration>
         fs.default.name=${fs.default.name}
+        mapred.job.tracker=${mapred.job.tracker}
     </hdp:configuration>
 
     <!-- Configures the word count job. -->
     <hdp:job id="wordCountJob"
+             jar-by-class="net.petrikainulainen.spring.data.apachehadoop.Main"
              input-path="${input.path}"
              output-path="${output.path}"
              mapper="net.petrikainulainen.spring.data.apachehadoop.WordMapper"
